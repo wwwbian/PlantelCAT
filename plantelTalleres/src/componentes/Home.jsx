@@ -1,10 +1,10 @@
 
 import Cards from './Cards'
 import { useContext } from "react"
-import { MyContext } from "../context/MyProvider";
+import { ContextProvider } from "../context/Provider";
 import Modal from './Modal';
 function Home() {
-    const {modalOn, setModalOn} = useContext(MyContext);
+    const {modalOn, setModalOn} = useContext(ContextProvider);
   return (
     <div>
 

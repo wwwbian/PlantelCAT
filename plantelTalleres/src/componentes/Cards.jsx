@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react';
 import Card from './Card';
-import { MyContext } from '../contex/MyProvider';
+import { ContextProvider} from '../context/Provider';
 
 export default function Cards() {
-  const { cardsData, BorrarCard } = useContext(MyContext);
+  const { cardsData, BorrarCard } = useContext(ContextProvider);
 
   return (
     <div> 

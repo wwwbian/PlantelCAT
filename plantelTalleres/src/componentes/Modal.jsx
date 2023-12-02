@@ -1,9 +1,9 @@
 import { useContext, useState } from "react"
-import { MyContext } from "../contex/MyProvider";
+import { ContextProvider } from "../context/Provider";
 import TextField from '@mui/material/TextField';
 
 export default function Modal() {
-  const { setModalOn} = useContext(MyContext);
+  const { setModalOn} = useContext(ContextProvider);
   const [nombre, setNombre] = useState("");
   const [posi, setPosi] = useState("");
   const handleNombre=(e)=>{
