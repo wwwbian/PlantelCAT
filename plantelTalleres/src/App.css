@@ -1,42 +1,19 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* App.css */
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.card-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* dos columnas de igual ancho */
+	gap: 2%; /* espacio entre las tarjetas */
+	justify-content: center; /* centrar las tarjetas horizontalmente */
+  margin-left: 10%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.card img {
+	width: 70%;
+	height: 60%;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#boton1{
+  background-color: gray;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+#boton2{
+  background-color: gray;
 }
